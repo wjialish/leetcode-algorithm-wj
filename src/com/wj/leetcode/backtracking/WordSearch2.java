@@ -1,4 +1,4 @@
-package com.wj.leetcode;
+package com.wj.leetcode.backtracking;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import com.wj.leetcode.WordSearch.TrieNode;
+import com.wj.leetcode.backtracking.WordSearch.TrieNode;
 
 public class WordSearch2 {
 

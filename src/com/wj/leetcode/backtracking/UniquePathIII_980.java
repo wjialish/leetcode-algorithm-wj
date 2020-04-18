@@ -1,10 +1,10 @@
-package com.wj.leetcode;
+package com.wj.leetcode.backtracking;
 
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
-public class UniquePathIII {
+public class UniquePathIII_980 {
 
 	
 	

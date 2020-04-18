@@ -1,4 +1,4 @@
-package com.wj.leetcode;
+package com.wj.leetcode.backtracking;
 
 
 public class EightQueue {
