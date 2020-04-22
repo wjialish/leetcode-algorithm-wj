@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class WordSearch {
+public class WordSearch_79 {
 
 	
 	/*
@@ -27,7 +27,6 @@ Given word = "ABCCED", return true.
 Given word = "SEE", return true.
 Given word = "ABCB", return false.
 	 */
-	
 	
 	private char[][] _board;
 	private String _word;
@@ -189,7 +188,7 @@ Given word = "ABCB", return false.
 
       char[][] board = {{'a', 'a'}};
       String[] words = {"aaa"};
-      WordSearch ws = new WordSearch();
+      WordSearch_79 ws = new WordSearch_79();
       //ws.findWords(board, words);
       List<String> list = new ArrayList<String>();
       list = ws.findWords(board, words);

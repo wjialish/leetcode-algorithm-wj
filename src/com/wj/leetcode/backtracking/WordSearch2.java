@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import com.wj.leetcode.backtracking.WordSearch.TrieNode;
+import com.wj.leetcode.backtracking.WordSearch_79.TrieNode;
 
 public class WordSearch2 {
 
@@ -35,6 +35,7 @@ public class WordSearch2 {
 		Output: ["eat","oath"]
 
 	 */
+
 	
 	
 	/*
@@ -80,6 +81,7 @@ public class WordSearch2 {
 		}
 		return this.resList;
 	}
+	
 	
 
 	private void backtracking(int i,int j, TrieNode root) {
@@ -145,7 +147,7 @@ public class WordSearch2 {
 
       char[][] board = {{'a', 'a'}};
       String[] words = {"aaa"};
-      WordSearch ws = new WordSearch();
+      WordSearch_79 ws = new WordSearch_79();
       //ws.findWords(board, words);
       List<String> list = new ArrayList<String>();
       list = ws.findWords(board, words);

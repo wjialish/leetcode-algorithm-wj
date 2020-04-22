@@ -31,52 +31,7 @@ For example, given n = 3, a solution set is:
 	
 	
 	
-	
-	public static List<String> generateParenthesis(int n) {
-       List<String> reslist=new ArrayList<>();
-       
-    }
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*public static List<String> generateParenthesis(int n) {
+   public static List<String> generateParenthesis(int n) {
         List<String> combinations = new ArrayList();
         generateAll(new char[2 * n], 0, combinations);
         return combinations;
@@ -102,7 +57,7 @@ For example, given n = 3, a solution set is:
             if (balance < 0) return false;
         }
         return (balance == 0);
-    }*/
+    }
     
     
     
