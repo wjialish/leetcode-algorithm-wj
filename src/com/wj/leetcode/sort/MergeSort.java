@@ -55,6 +55,9 @@ public class MergeSort {
 	
 	
 	public static int[] mergeSort(int[] arr,int low,int high) {
+		if(low >= high) {
+			return arr;
+		}
 		int mid = (low+high)/2;
 		//int mid = low + (high - low)/2; //prevent integer out of bounds
 		if(low<high) {
@@ -104,5 +107,8 @@ public class MergeSort {
 		
 		System.arraycopy(temp, 0, arr, low, high-low+1);
 	}
+	
+	
+	
 	
 }

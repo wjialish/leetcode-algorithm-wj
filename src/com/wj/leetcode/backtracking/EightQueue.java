@@ -96,6 +96,7 @@ public class EightQueue {
 	
 	public static boolean isValid(int[] record, int i, int j) {
 		for(int k=0;k<i;k++) {
+			//当前行所放的皇后是否在那一列上，或者在对角线上
 			if(Math.abs(i-k) == Math.abs(j-record[k]) || j==record[k]) {
 				return false;
 			}

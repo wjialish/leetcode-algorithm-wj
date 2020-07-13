@@ -1,6 +1,5 @@
 package com.wj.leetcode.treenode;
 
-import javax.print.attribute.standard.Sides;
 
 public class SegMentTree {
 

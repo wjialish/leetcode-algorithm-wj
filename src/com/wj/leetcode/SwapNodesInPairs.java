@@ -7,14 +7,14 @@ public class SwapNodesInPairs {
 	
 	   public ListNode swapPairs(ListNode head) {
 		   int n = 2;
-		   ListNode cur=head;
+		   ListNode cur=head;  //当前节点
 		   if(cur!=null && cur.next!=null) {
-			   ListNode prev=null;
-			   ListNode next=null;
-			   while(cur!=null && n-- > 0 ) {
-				  next = cur.next;
-				  cur.next = prev;
-				  prev = cur;
+			   ListNode prev=null; //前一个节点
+			   ListNode next=null; //下一个节点
+			   while(cur!=null && n-- > 0 ) {  //不断重复如下步骤，直到把这组当中的k的元素翻转完毕
+				  next = cur.next; //将cur指向的下一个节点保存到next指针
+				  cur.next = prev;  //cur指针指向prev
+				  prev = cur;  //prev和cur指针一起向前移动一步
 				  cur = next;
 			   }
 			   
@@ -71,7 +71,6 @@ public class SwapNodesInPairs {
 		  
 		  
 	}
-	   
 	   
 	   
 	   

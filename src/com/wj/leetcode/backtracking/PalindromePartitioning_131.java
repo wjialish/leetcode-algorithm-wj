@@ -163,16 +163,47 @@ Output:
 	 }
 	 
 	 
-	 
-	 
-	 //判断是否是回文数方法二：
-	 public boolean isPalindrome2(StringBuilder sb) {
-		 StringBuilder sb2 = sb.reverse();
-		 for(int i =0 ;i<sb.length();i++) {
-			 if(sb.charAt(i) != sb2.charAt(i)) {
-				 return false;
-			 }
-		 }
-		 return true;
-	 }
+
+
+	/*
+	此方法是不对的，原始是sb.reverse() 方法后sb就变成reverse后的数了
+	*/
+
+	 public static boolean isPalindrome(int x) {
+
+		if(x < 0 || x!=0 && x%10==0)
+		return false;
+		
+		String s = String.valueOf(x);
+		
+		System.out.println(s);
+		
+		StringBuffer sb = new StringBuffer(s);
+		
+        //StringBuilder sb = new StringBuilder(s);
+
+		StringBuffer sb2 = sb.reverse();
+		
+		System.out.println(sb);
+
+
+		System.out.println(sb);
+        System.out.println(sb2);
+
+        for(int i = 0;i<sb.length();i++){
+			System.out.println("sb----"+sb.charAt(i));
+            System.out.println("sb2----"+sb2.charAt(i));
+            if(sb.charAt(i) != sb2.charAt(i)){
+                return false;
+            }
+        }
+        
+        return true;
+
+      }
+
+
+      public static void main(String[] args) {
+          System.out.println(isPalindrome(123));
+      }
 }
